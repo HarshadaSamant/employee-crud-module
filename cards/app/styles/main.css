@@ -1,0 +1,98 @@
+.conatiner  {
+  max-width: 1366;
+}
+img, p {
+  width: 100%;
+  margin: 0;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.emp_data .emp_head {
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card  {
+  /*border: 1px solid #ccc;*/
+  margin: 40px;
+  padding: 30px 40px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);  
+  position: relative;
+}
+
+.emp_details {
+  display: none;
+  background: #fff;
+  border: 1px solid #8fd8f7;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+}
+
+.emp_details:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #8fd8f7;
+  border-bottom: 20px solid transparent;
+}
+
+.primary {
+  padding: 15px 40px;
+  text-transform: capitalize;
+  background-color: #8fd8f7;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  margin: 15px;
+}
+
+.card:hover .emp_details {
+  display: block;
+}
+
+.card .image {
+  width: 150px;
+}
+
+.card .info {
+  padding: 20px;
+}
+
+.card .emp_name,
+.card .emp_age,
+.details {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.details {
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 10px 40px;
+  background-color: #8fd8f7;
+}
+
+.card .emp_age {
+  font-size: 15px;
+}
